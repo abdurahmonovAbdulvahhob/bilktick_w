@@ -26,10 +26,10 @@ const Router = () => {
           path: "/product/:id",
           element: <Detail />,
         },
-        // {
-        //   path: "/search",
-        //   element: <Search />,
-        // },
+        {
+          path: "/search",
+          element: <Search />,
+        },
         {
           path: "/movies",
           element: <MyMovies />,
