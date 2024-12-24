@@ -27,7 +27,7 @@ const Footer = () => {
             </Link>
           </div>
           <div className="mb-4">
-            <a
+            <Link to={"/"}
               href="https://play.google.com/store"
               target="_blank"
               rel="noopener noreferrer"
@@ -38,8 +38,8 @@ const Footer = () => {
                 alt="Google Play"
                 className="w-36 cursor-pointer hover:opacity-75"
               />
-            </a>
-            <a
+            </Link>
+            <Link to={"/"}
               href="https://www.apple.com/app-store/"
               target="_blank"
               rel="noopener noreferrer"
@@ -50,7 +50,7 @@ const Footer = () => {
                 alt="App Store"
                 className="w-36 cursor-pointer hover:opacity-75"
               />
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -100,44 +100,44 @@ const Footer = () => {
 
         <div>
           <h3 className="text-lg font-semibold mb-4">Contact us</h3>
-          <a
+          <Link to={"/"}
             href="tel:+998958973338"
             className="text-red-500 mb-6 cursor-pointer hover:underline hover:text-red-600"
           >
-            +998 (95) 897-33-38
-          </a>
+            +998 (90) 007-70-49 
+          </Link>
           <h3 className="text-lg font-semibold mb-4">Social media</h3>
           <div className="flex space-x-4">
-            <a
+            <Link to={"/"}
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
               className="text-red-500 text-2xl cursor-pointer hover:text-red-600 transition"
             >
               <FaInstagram />
-            </a>
-            <a
+            </Link>
+            <Link to={"/"}
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
               className="text-red-500 text-2xl cursor-pointer hover:text-red-600 transition"
             >
               <FaFacebookF />
-            </a>
-            <a
+            </Link>
+            <Link to={"/"}
               href="https://youtube.com"
               target="_blank"
               rel="noopener noreferrer"
               className="text-red-500 text-2xl cursor-pointer hover:text-red-600 transition"
             >
               <FaYoutube />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
 
       <div className="text-center text-sm text-gray-400 mt-8">
-        © {new Date().getFullYear()} Your Company. All Rights Reserved.
+        © {new Date().getFullYear()} Cinema Company. All Rights Reserved.
       </div>
     </footer>
   );

@@ -5,6 +5,7 @@ import { useSearchParams } from "react-router-dom";
 import { request } from "../../api";
 import Movies from "../../components/movies/Movies";
 import { ReactTyped } from "react-typed";
+import { MOVIES } from "../../static";
 const Search = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const [searchValue, setSearchValue] = useState(searchParams.get("q") || "");
@@ -49,7 +50,7 @@ const Search = () => {
           <CiSearch className="w-6 h-6 text-primary" />
         </button>
         <ReactTyped
-          strings={["Avengers", "Venom", "Avatar", "Spiderman"]}
+          strings={MOVIES}
           typeSpeed={40}
           backSpeed={50}
           attr="placeholder"
