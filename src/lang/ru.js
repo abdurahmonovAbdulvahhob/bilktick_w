@@ -1,9 +1,9 @@
 export const translationRu = {
   header: {
     nav: {
-      home: "Дом",
-      movies: "фильмы",
-      saved: "сохранять",
+      home: "Главная",
+      movies: "Фильмы",
+      saved: "Сохраненные",
       search: "Поиск",
     },
     login: "Войти",
